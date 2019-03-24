@@ -1,0 +1,46 @@
+body{
+    font-family: 'Hind', sans-serif;
+}
+main#main-doc{
+    display: grid;
+    grid-template-columns: minmax(300px, auto) 1fr;
+    grid-template-areas: "navbar mainContent";
+    grid-column-gap: 1px;
+}
+nav#navbar{
+   grid-area: navbar;
+   position: fixed;
+   padding-left: 10px;
+   padding-top: 20px;
+}
+.nav-item a{
+   
+   border: 1px solid black;
+   list-style: none;
+   margin-left: 10px;
+}
+header{
+    font-size: 1.6em;
+    font-weight: 800;
+    padding-left: 20px;
+}
+.content{
+    grid-area:mainContent;  
+     padding: 15px;
+}
+code{
+    background: #ccc;
+    display: block;
+    padding: 20px;
+}
+
+
+@media screen and (max-width:750px){
+    main#main-doc{
+        grid-auto-columns:1fr;
+        grid-template-areas: "navbar" "mainContent";
+    }
+    nav#navbar{
+        position: inherit;
+    }
+}

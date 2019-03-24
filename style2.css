@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+display: flex;
+flex-direction: column;
+}
+.top-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(225,225,225,0.6);
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+.title-color{
+    text-transform: uppercase;
+    color: #ff4181;
+}
+.search_my{
+    border: 2px #000 solid;
+}
+.search1{
+    border: none;
+    background-color: none;
+    width: 150px;
+}
+.button1{
+    color:#000fff;
+    background-color: none;
+    border: none;
+    height: 40px;
+    width: 40px;
+}
+.navbar{
+padding: 0px;
+}
+.navbar-nav li{
+    z-index: 1;
+}
+.navbar-nav li a{
+    font-size: 16px;
+    padding: 15px 60px!important;
+
+}
+.navbar-nav li a:hover{
+    border-right: 3px solid #ff4f81;
+    border-left: 3px solid #ff4f81;
+    transition: 0.5s all;
+}
+.navbar-light .navbar-nav nav-link{
+    color: #000;
+}
+.bgcover{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.content{
+    color: rgb(4, 71, 131);
+    width: 80%;
+}
+
+.social-bar{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 10px;
+    
+}
+.cardrow{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+    grid-template-rows: auto;
+    grid-gap: 25px;
+}
+.card{
+    border: 1px solid #000;
+}
+.youtube-tutor{
+    color: #ff4181;
+}
+.tutorbox li {
+    list-style: none;
+}
+.row-contact{
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    border:1px #000fff solid;
+}
+
+
+
+@media(max-width:1200px){
+    .navbar-nav li{
+        font-size: 15px;
+    }
+    .content{
+        color: rgb(4, 71, 131);
+        width: 80%;
+    
+    }
+    
+}
+@media(max-width:992px){
+    .navbar-toggler{
+        margin: 10px 0px 10px 30px;
+        background-color: #ff4f81;
+    }
+    .navbar-toggler:hover, .navbar-toggler:focus{
+        background-color: #fff;
+        border-color: #ff4f81;
+    }
+    .navbar-light{
+        background-color: #fff;
+    }
+    .navbar-nav li a{
+        text-align: center;
+        background-color: aliceblue;
+    }
+    .navbar-nav li a:hover{
+        background-color: #ff4f81;
+    }
+    .content{
+        color: rgb(4, 71, 131);
+        width: 96%;
+    
+    }
+    
+}

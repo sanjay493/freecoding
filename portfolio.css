@@ -1,0 +1,55 @@
+#navbar {
+    z-index: 10000;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+ }
+.intro{
+    height: 100vh;
+    padding: ;
+    display:flex;
+    flex-direction: Column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    border-radius:;
+}
+.work{
+    height: 100vh;
+    padding: 40px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:5px;
+
+}
+
+.contact{
+   padding: 10px;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+    align-items: center;
+}
+.project-title{
+    
+}
+.social{
+    font-size: 3rem;
+    justify-content: center;
+
+}
+.social i{
+    margin-right: 1.2rem;
+
+}
+
+@media screen and (max-width:750px){
+    .work{
+        grid-template-columns: 1fr;
+
+    
+    }
+    
+}
